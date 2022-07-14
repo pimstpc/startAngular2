@@ -12,7 +12,7 @@ import { NopagetodisplayComponent } from './nopagetodisplay/nopagetodisplay.comp
 
 import { Router, RouterModule, Routes } from '@angular/router';
 const appRoutes: Routes = [
-  { path: 'home', component: HomeConponent },
+  { path: 'home', component: HomeComponent },
   { path: 'students', component: StudentlistComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: NopagetodisplayComponent },
@@ -26,7 +26,7 @@ const appRoutes: Routes = [
     TestComponent,
     SimpleComponent,
     StudentlistComponent,
-    HomeConponent,
+    HomeComponent,
     NopagetodisplayComponent,
   ],
   bootstrap: [AppComponent],
