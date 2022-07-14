@@ -3,3 +3,9 @@
   <h1>{{name}}</h1>
 </div>
 <app-test [parentName]="name"></app-test>
+
+//22.Angular liftCycle
+<br/><br/>
+Your text : <input type='text' [(ngModel)]='userText'/>
+<br/><br/>
+<simple [simpleInput]='userText'></simple>
