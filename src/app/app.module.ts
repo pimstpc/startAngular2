@@ -6,12 +6,12 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { TestComponent } from './test/test.component';
 import { SimpleComponent } from './hooks/simple.component';
-//import { StudentlistComponent } from './studentlist/studentlist.component';
+import { StudentlistComponent } from './studentlist/studentlist.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [AppComponent, HelloComponent, TestComponent,SimpleComponent,
-    //StudentlistComponent
+    StudentlistComponent
   ],
   bootstrap: [AppComponent],
 })
