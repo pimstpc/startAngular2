@@ -7,11 +7,21 @@ import { HelloComponent } from './hello.component';
 import { TestComponent } from './test/test.component';
 import { SimpleComponent } from './hooks/simple.component';
 import { StudentlistComponent } from './studentlist/studentlist.component';
+import { HomeConponent } from './home/home.component';
+import { NopagetodisplayComponent } from './nopagetodisplay/nopagetodisplay.component';
+
+import { Router, RouterModule, Routes } from '@angular/router';
+const appRoutes : Routes =[
+  { path : 'home', component : HomeConponent },
+  { path : 'students', component : StudentlistComponent},
+  { path : '', redirectTo : '/home', pathMatch : 'full'},
+  { path : '**', component : NopagetodisplayComponent}
+];
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes)],
   declarations: [AppComponent, HelloComponent, TestComponent,SimpleComponent,
-    StudentlistComponent
+    StudentlistComponent,HomeConponent,NopagetodisplayComponent
   ],
   bootstrap: [AppComponent],
 })

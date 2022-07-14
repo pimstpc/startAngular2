@@ -1,14 +1,22 @@
 //21.parent Chuld Component Interraction
 <div style="text-align:center">
-  <h1>{{name}}</h1>
+  <h1>{{ name }}</h1>
 </div>
 <app-test [parentName]="name"></app-test>
 
 //22.Angular liftCycle
-<br/><br/>
-Your text : <input type='text' [(ngModel)]='userText'/>
-<br/><br/>
-<simple [simpleInput]='userText'></simple>
+<br /><br />
+Your text : <input type="text" [(ngModel)]="userText" /> <br /><br />
+<simple [simpleInput]="userText"></simple>
 
 //23-24.Angular Services
 <app-studentlist></app-studentlist>
+
+//25.Angular Routing
+<div style="padding:5px">
+  <ul>
+    <li><a routerLink="home">Home</a></li>
+    <li><a routerLink="students">Students</a></li>
+  </ul>
+  <router-outlet></router-outlet>
+</div>
